@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display:grid;
+      gap:10px;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      justify-content: center;
+      background-color: #232629;
+      width:748px;
+      height:748px;
+    }
+    .red{
+      grid-column:1 /span 1;
+      grid-row:1/span 1;
+      background-color: #E72F24 ;
+    }
+    .top-right{
+      grid-column:2/ span 3;
+      grid-row:1 / span 1;
+      background-color: #F0F1EC;
+      display:flex;
+    }
+    .left-big-white{
+      grid-column:1 / span 1;
+      grid-row:2 / span 2;
+      background-color: #F0F1EC;
+    }
+    .right-big-white{
+      grid-column:2/span 2;
+      grid-row: 2 / span 2;
+      background-color: #F0F1EC;
+    }
+    .right-small-blue{
+      grid-column:4/span 1;
+      grid-row:2/ span 1;
+      background-color:#004592 ;
+    }
+    .right-small-white{
+      grid-column:4/span 1;
+      grid-row:3/ span 2;
+      background-color: #F0F1EC;
+    }
+    .bottom-white{
+      grid-column:1/span 1;
+      grid-row:4/ span 1;
+      background-color: #F0F1EC;
+    }
+    .bottom-yellow{
+      grid-column:2/span 1;
+      grid-row:4/ span 1;
+      background-color:  #F9D01E;
+    }
+    .img{
+      width:100%;
+      height:100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="top-right"><img src="./Kevin.jpg" / ></div>
+    <div class="left-big-white"></div>
+    <div class ="right-big-white"></div>
+    <div class ="right-small-blue"></div>
+    <div class="right-small-white"></div>
+    <div class="bottom-white"></div>
+    <div class="bottom-yellow"></div>
+    <div class="bottom-grey"></div>"
+
+
+  </div>
+</body>
+
+</html>
